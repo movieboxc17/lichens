@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lichen Explorer | Discover the Fascinating World of Lichens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <span>Lichen Explorer</span>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#dna">DNA Research</a></li>
+            <li><a href="#facts">Facts</a></li>
+            <li><a href="#contact" class="btn-primary">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the World of Lichens</h1>
+            <p>Discover the fascinating symbiotic organisms that thrive in Earth's most extreme environments</p>
+            <div class="disclaimer">
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Some information may require verification. Please consult scientific sources for research purposes.</span>
+            </div>
+            <a href="#about" class="btn-primary">Explore Now</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Lichens</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Lichens are extraordinary composite organisms that arise from algae or cyanobacteria living among filaments of multiple fungi species. This symbiotic relationship creates a completely new organism different from any of its component parts.</p>
+                    <p>These resilient life forms can survive in some of the most extreme environments on Earth, from arctic tundra to scorching deserts, and play crucial roles in ecosystem functions like soil formation and nitrogen fixation.</p>
+                    <a href="#" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://i.ibb.co/hY8LZv0/converted-image.jpg" alt="Lichen on Tree" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lichen Gallery</h2>
+                <div class="underline"></div>
+                <p>Explore the diverse forms and colors of lichens from around the world</p>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="gallery-image-container">
+                        <img src="https://i.ibb.co/9bXw6gY/converted-image-2.jpg" alt="Lichen on Rock" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Rock Lichen</h3>
+                                <p>Crustose lichen growing on exposed rock surface</p>
+                                <button class="gallery-zoom"><i class="fas fa-search-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image-container">
+                        <img src="https://i.ibb.co/PMpTgzr/converted-image-3.jpg" alt="Close-up of Lichen" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Foliose Lichen</h3>
+                                <p>Detailed close-up showing the leaf-like structure</p>
+                                <button class="gallery-zoom"><i class="fas fa-search-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image-container">
+                        <img src="https://i.ibb.co/hY8LZv0/converted-image.jpg" alt="Lichen on Tree" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Tree Lichen</h3>
+                                <p>Various lichen species colonizing tree bark</p>
+                                <button class="gallery-zoom"><i class="fas fa-search-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div id="lightbox-caption"></div>
+        </div>
+    </section>
+
+    <section id="dna" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lichen DNA Research</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="dna-content">
+                <div class="dna-image">
+                    <img src="https://i.ibb.co/2SwfSXs/DNA-lichen.png" alt="DNA Extraction Process" loading="lazy">
+                </div>
+                <div class="dna-text">
+                    <h3>DNA Extraction Process</h3>
+                    <p>Extracting DNA from lichens is essential for genetic studies of these complex symbiotic organisms. The process involves several critical steps to isolate high-quality DNA for analysis.</p>
+                    <div class="dna-accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-button">
+                                Sample Preparation
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Carefully clean and prepare the lichen sample to remove contaminants such as soil, insects, and other plant materials. This often involves rinsing with sterile water and careful examination under a microscope.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button">
+                                Cell Lysis
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Break down the cell walls and membranes to release the DNA. This typically involves grinding the sample in liquid nitrogen and treating with detergents and enzymes to disrupt cellular structures.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button">
+                                DNA Isolation
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Separate the DNA from other cellular components using techniques such as CTAB extraction, silica-based methods, or commercial DNA extraction kits optimized for plant or fungal tissue.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button">
+                                Purification
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Remove any remaining impurities from the extracted DNA using precipitation with ethanol or isopropanol, followed by washing steps to eliminate salts and other contaminants.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button">
+                                Quality Assessment
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Check the purity and concentration of the extracted DNA using spectrophotometry (e.g., NanoDrop), gel electrophoresis, or fluorometric quantification methods like Qubit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facts" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fascinating Lichen Facts</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="facts-container">
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Ancient Organisms</h3>
+                    <p>Some lichen colonies are among the oldest living things on Earth, with certain specimens estimated to be over 4,500 years old.</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Air Quality Indicators</h3>
+                    <p>Lichens serve as bioindicators of air quality due to their sensitivity to pollutants like sulfur dioxide and nitrogen compounds.</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Medicinal Properties</h3>
+                    <p>Certain lichens produce unique compounds used in traditional medicine and modern pharmaceuticals for their antibacterial properties.</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Natural Dyes</h3>
+                    <p>For centuries, lichens have been used to create vibrant, colorfast natural dyes for fabrics, particularly in Scottish Harris Tweed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="underline"></div>
+                <p>Have questions about lichens? Want to contribute to our research? Reach out to us!</p>
+            </div>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject">
+                            <option value="">Select a topic</option>
+                            <option value="research">Research Collaboration</option>
+                            <option value="question">General Question</option>
+                            <option value="feedback">Website Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@lichenexplorer.org</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Research Avenue<br>Botany Department<br>University of Natural Sciences</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>Lichen Explorer</span>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#about">About Lichens</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#dna">DNA Research</a></li>
+                        <li><a href="#facts">Facts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Lichen" target="_blank">Wikipedia - Lichen</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1234567/" target="_blank">NCBI - Lichen DNA Studies</a></li>
+                        <li><a href="https://www.britannica.com/science/lichen" target="_blank">Encyclopedia Britannica</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Research Opportunities</a></li>
+                        <li><a href="#">Contribute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest lichen research and discoveries</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Moviebox C17 & Askansz. All rights reserved.</p>
+                <div class="footer-policy-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
